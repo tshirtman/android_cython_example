@@ -1,0 +1,9 @@
+**/*.pyc
+**/*.pyo
+**/*.c
+**/*.so
+**/*.o
+**/*.egg
+**/*.egg-info
+bin
+.buildozer
