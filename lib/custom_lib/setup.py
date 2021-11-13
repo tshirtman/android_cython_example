@@ -25,7 +25,7 @@ if PLATFORM != 'android':
     SETUP_REQUIRES.append('cython')
     INSTALL_REQUIRES.append('cython')
 else:
-    FILES = [Path(str(fn)[:-3] + 'c') for fn in FILES if fn.suffix == 'pyx']
+    FILES = [fn.with_suffix('.c') for fn in FILES]
 
 # create the extension
 setup(
