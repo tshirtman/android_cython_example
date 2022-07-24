@@ -17,7 +17,7 @@ SETUP_REQUIRES = []
 # detect Python for android
 PLATFORM = sys.platform
 
-if getenv('NDKPLATFORM') and getenv('LIBLINK'):
+if getenv('LIBLINK'):
     PLATFORM = 'android'
 
 # detect cython
